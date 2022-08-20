@@ -2,7 +2,11 @@
   "name": "weather-cli",
   "version": "1.0.0",
   "description": "CLI for getting weather",
-  "main": "index.js",
+  "main": "weather.js",
+  "bin": {
+    "weather": "weather.js"
+  },
+  "type": "module",
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,5 +16,9 @@
     "weather"
   ],
   "author": "Alexey",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "chalk": "^5.0.1"
+  }
 }
